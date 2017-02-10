@@ -41,5 +41,4 @@ setInterval(function() {
             }
         }
     });
-}, 6400);
-// },config.frequency/86400);
+},config.frequency/86400);
