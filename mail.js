@@ -33,7 +33,7 @@ exports.sendTextMailToUsers = function(users, subject, html, callback) {
 
     let usersStr = users.join(',');
     let options = {
-        from: '"流量日常"<justregisterid@gmail.com>', // sender address
+        from: `"流量日常"<${config.senderMail}>`, // sender address
         to: usersStr,
         subject: subject, // Subject line
         html: html,
